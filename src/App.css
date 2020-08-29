@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Oswald", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-content {
+  background-color: #4869c5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.new-task {
+  height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.new-task-btn {
+  background-color: #3bbe92;
   color: white;
+  width: fit-content;
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.input-container {
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 100%;
+  min-height: 90vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 90%;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section-container {
+  background-color: #e5eff5;
+  flex: 1;
+  margin: 10px 25px;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 6px;
+}
+.section-header {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card-tag {
+  width: 35px;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.card-description {
+  font-size: 16px;
+  text-align: justify;
+  margin: 8px 0px;
+}
+
+.card-footer {
+  display: flex;
+  margin-top: 15px;
+}
+
+.card-ddl {
+  background-color: grey;
+  width: fit-content;
+  padding: 0px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+}
+.card-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.action {
+  margin: 0px 10px;
+  color: #086ad8;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .section-container {
+    padding: 10px 30px;
   }
 }
